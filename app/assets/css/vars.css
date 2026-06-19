@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #4d0073;
+  --color-secondary: #3688be;
+  --header-height: 12rem;
+  --aside-width: max(28rem, 25vw);
+  --main-width: 100%;
+  --header-margin: 3.1rem;
+  --home-padding: 3rem;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --aside-width: 100%;
+  }
+}
+
+/**/
+/* @media (max-width: 420px) { */
+/*     :root {} */
+/* } */
