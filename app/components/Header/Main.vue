@@ -1,9 +1,23 @@
 <template>
-  <header>
-    <h1>Main Header</h1>
+  <header :class="{ short: short != undefined }">
+    <MenuPoster />
+    <MenuMain />
+    <MenuOval />
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+const props = defineProps(["short"]);
+</script>
 
-<style scoped></style>
+<style scoped>
+header {
+  background: white;
+  height: 100vh;
+  position: relative;
+  transition: all 200ms;
+}
+header.short {
+  height: 70vh;
+}
+</style>

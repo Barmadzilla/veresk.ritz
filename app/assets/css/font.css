@@ -1,0 +1,251 @@
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-BoldItalic.eot");
+    src:
+        local("Cocomat Pro Bold Italic"),
+        local("CocomatPro-BoldItalic"),
+        url("/Cocomat/CocomatPro-BoldItalic.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-BoldItalic.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-BoldItalic.woff") format("woff"),
+        url("/Cocomat/CocomatPro-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-BlackItalic.eot");
+    src:
+        local("Cocomat Pro Black Italic"),
+        local("CocomatPro-BlackItalic"),
+        url("/Cocomat/CocomatPro-BlackItalic.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-BlackItalic.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-BlackItalic.woff") format("woff"),
+        url("/Cocomat/CocomatPro-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-Black.eot");
+    src:
+        local("Cocomat Pro Black"),
+        local("CocomatPro-Black"),
+        url("/Cocomat/CocomatPro-Black.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-Black.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-Black.woff") format("woff"),
+        url("/Cocomat/CocomatPro-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-ExtraLightItalic.eot");
+    src:
+        local("Cocomat Pro ExtraLight Italic"),
+        local("CocomatPro-ExtraLightItalic"),
+        url("/Cocomat/CocomatPro-ExtraLightItalic.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-ExtraLightItalic.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-ExtraLightItalic.woff") format("woff"),
+        url("/Cocomat/CocomatPro-ExtraLightItalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-ExtraBold.eot");
+    src:
+        local("Cocomat Pro ExtraBold"),
+        local("CocomatPro-ExtraBold"),
+        url("/Cocomat/CocomatPro-ExtraBold.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-ExtraBold.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-ExtraBold.woff") format("woff"),
+        url("/Cocomat/CocomatPro-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-ThinItalic.eot");
+    src:
+        local("Cocomat Pro Thin Italic"),
+        local("CocomatPro-ThinItalic"),
+        url("/Cocomat/CocomatPro-ThinItalic.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-ThinItalic.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-ThinItalic.woff") format("woff"),
+        url("/Cocomat/CocomatPro-ThinItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-MediumItalic.eot");
+    src:
+        local("Cocomat Pro Medium Italic"),
+        local("CocomatPro-MediumItalic"),
+        url("/Cocomat/CocomatPro-MediumItalic.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-MediumItalic.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-MediumItalic.woff") format("woff"),
+        url("/Cocomat/CocomatPro-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-HeavyItalic.eot");
+    src:
+        local("Cocomat Pro Heavy Italic"),
+        local("CocomatPro-HeavyItalic"),
+        url("/Cocomat/CocomatPro-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-HeavyItalic.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-HeavyItalic.woff") format("woff"),
+        url("/Cocomat/CocomatPro-HeavyItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-Regular.eot");
+    src:
+        local("Cocomat Pro Regular"),
+        local("CocomatPro-Regular"),
+        url("/Cocomat/CocomatPro-Regular.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-Regular.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-Regular.woff") format("woff"),
+        url("/Cocomat/CocomatPro-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-ExtraBoldItalic.eot");
+    src:
+        local("Cocomat Pro ExtraBold Italic"),
+        local("CocomatPro-ExtraBoldItalic"),
+        url("/Cocomat/CocomatPro-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-ExtraBoldItalic.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-ExtraBoldItalic.woff") format("woff"),
+        url("/Cocomat/CocomatPro-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("CocomatPro-Medium.eot");
+    src:
+        local("Cocomat Pro Medium"),
+        local("CocomatPro-Medium"),
+        url("/Cocomat/CocomatPro-Medium.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-Medium.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-Medium.woff") format("woff"),
+        url("/Cocomat/CocomatPro-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-Light.eot");
+    src:
+        local("Cocomat Pro Light"),
+        local("CocomatPro-Light"),
+        url("/Cocomat/CocomatPro-Light.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-Light.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-Light.woff") format("woff"),
+        url("/Cocomat/CocomatPro-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-Thin.eot");
+    src:
+        local("Cocomat Pro Thin"),
+        local("CocomatPro-Thin"),
+        url("/Cocomat/CocomatPro-Thin.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-Thin.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-Thin.woff") format("woff"),
+        url("/Cocomat/CocomatPro-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-Heavy.eot");
+    src:
+        local("Cocomat Pro Heavy"),
+        local("CocomatPro-Heavy"),
+        url("/Cocomat/CocomatPro-Heavy.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-Heavy.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-Heavy.woff") format("woff"),
+        url("/Cocomat/CocomatPro-Heavy.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("CocomatPro-LightItalic.eot");
+    src:
+        local("Cocomat Pro Light Italic"),
+        local("CocomatPro-LightItalic"),
+        url("/Cocomat/CocomatPro-LightItalic.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-LightItalic.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-LightItalic.woff") format("woff"),
+        url("/Cocomat/CocomatPro-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-ExtraLight.eot");
+    src:
+        local("Cocomat Pro ExtraLight"),
+        local("CocomatPro-ExtraLight"),
+        url("/Cocomat/CocomatPro-ExtraLight.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-ExtraLight.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-ExtraLight.woff") format("woff"),
+        url("/Cocomat/CocomatPro-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-Bold.eot");
+    src:
+        local("Cocomat Pro Bold"),
+        local("CocomatPro-Bold"),
+        url("/Cocomat/CocomatPro-Bold.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-Bold.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-Bold.woff") format("woff"),
+        url("CocomatPro-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cocomat Pro";
+    src: url("/Cocomat/CocomatPro-Italic.eot");
+    src:
+        local("Cocomat Pro Italic"),
+        local("CocomatPro-Italic"),
+        url("/Cocomat/CocomatPro-Italic.eot?#iefix") format("embedded-opentype"),
+        url("/Cocomat/CocomatPro-Italic.woff2") format("woff2"),
+        url("/Cocomat/CocomatPro-Italic.woff") format("woff"),
+        url("/Cocomat/CocomatPro-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}

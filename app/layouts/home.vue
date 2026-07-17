@@ -1,6 +1,9 @@
 <template>
-  <slot />
+  <NuxtLoadingIndicator />
+  <HeaderMain />
+  <ContentMain>
+    <slot />
+  </ContentMain>
+  <FooterMain />
 </template>
-<script setup>
-const config = useRuntimeConfig();
-</script>
+<script setup></script>

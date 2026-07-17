@@ -36,3 +36,15 @@ useHead({
   meta: [{ name: "theme-color", content: "#4d0073" }],
 });
 </script>
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(0.2rem);
+  transform: translateX(1rem);
+}
+</style>

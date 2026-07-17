@@ -1,5 +1,7 @@
 :root {
-  --color-primary: #4d0073;
+  --color-primary: #5c487a;
+  --color-link: #794ac0;
+  --color-hover: #C987D5;
   --color-secondary: #3688be;
   --header-height: 12rem;
   --aside-width: max(28rem, 25vw);

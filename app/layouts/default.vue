@@ -1,22 +1,12 @@
 <template>
-  <HeaderMain />
-  <main class="content">
+  <NuxtLoadingIndicator />
+  <HeaderMain short />
+  <ContentMain>
     <slot />
-  </main>
+  </ContentMain>
   <FooterMain />
 </template>
 <script setup>
 // const state = useState("BreadCrumbs", () => []);
 </script>
-<style scoped>
-.content {
-  display: flex;
-  margin-top: var(--header-height);
-}
-@media (max-width: 800px) {
-  .content {
-    margin-top: unset;
-    display: block;
-  }
-}
-</style>
+<style scoped></style>
