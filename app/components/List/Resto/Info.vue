@@ -2,6 +2,7 @@
   <div class="info">
     <ListCardTitle :title="title" />
     <ListCardParams> Ежедневно c {{ from }} до {{ to }} </ListCardParams>
+    <ListRestoService :data="services" />
     <ContentMD :content="description" />
     <ListRestoFooter :link="link" :book="book" />
   </div>
@@ -9,7 +10,14 @@
 
 <script setup>
 import moment from "moment";
-const props = defineProps(["title", "params", "description", "link", "book"]);
+const props = defineProps([
+  "title",
+  "services",
+  "params",
+  "description",
+  "link",
+  "book",
+]);
 moment.locale("ru");
 const from = moment()
   .set({

@@ -3,11 +3,11 @@ export const restorantsData = () => {
     {
       title: 'Ресторан на озере "Вереск" ',
       images: ["/images/restorants/veresk.jpg"],
-      services: ["fastfood", "breakfast", "lunch", "dinner"],
+      services: ["breakfast", "lunch", "dinner"],
       description:
         "Атмосферу ресторана и непреодолимое желание возвращаться к нам почаще создает фирменный дружелюбный сервис от каждого члена нашей команды: каждую секунду мы искренне заботимся о том, чтоб ваш визит в «Вереск» прошел незабываемо!",
       working: { from: { h: 10, m: 0 }, to: { h: 22, m: 0 } },
-      link: "/veresk",
+      link: "/restorants/veresk",
       book: true,
     },
     {
@@ -17,7 +17,7 @@ export const restorantsData = () => {
       description:
         "Атмосферу ресторана и непреодолимое желание возвращаться к нам почаще создает фирменный дружелюбный сервис от каждого члена нашей команды: каждую секунду мы искренне заботимся о том, чтоб ваш визит в «Вереск» прошел незабываемо!",
       working: { from: { h: 8, m: 0 }, to: { h: 11, m: 0 } },
-      link: "/primavera",
+      link: "/restorants/primavera",
       book: false,
     },
     {

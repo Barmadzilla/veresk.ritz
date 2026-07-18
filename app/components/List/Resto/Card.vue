@@ -8,6 +8,7 @@
         :description="data.description"
         :link="data.link"
         :book="data.book"
+        :services="data.services"
       />
     </ListCardContent>
   </ListCard>
