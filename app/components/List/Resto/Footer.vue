@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <ListCardButtons>
-      <ButtonNude label="Подробнее" noArrow noBold :to="link" />
+      <ButtonNude label="Подробнее" noArrow noBold :to="'/restorants' + link" />
       <ButtonNude v-if="book" label="Забронировать" :to="book" />
     </ListCardButtons>
   </div>
