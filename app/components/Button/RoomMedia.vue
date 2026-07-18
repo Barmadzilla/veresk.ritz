@@ -8,9 +8,9 @@
 <script setup>
 const props = defineProps(["type"]);
 const icon = computed(() => {
-  if (props.type == "virtual-tour") return "/icons/vt.png";
-  if (props.type == "video") return "/icons/video.png";
-  if (props.type == "gallery") return "/icons/gallery.png";
+  if (props.type == "virtual-tour") return "/icon/vt.png";
+  if (props.type == "video") return "/icon/video.png";
+  if (props.type == "gallery") return "/icon/gallery.png";
 });
 const label = computed(() => {
   if (props.type == "virtual-tour") return "Виртуальный тур";

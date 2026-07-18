@@ -6,13 +6,13 @@
 
 <script setup>
 const data = [
-  { title: "Свадьба", src: "/icons/marriage.png", link: "/" },
-  { title: "Корпаратив", src: "/icons/corp.png", link: "/" },
-  { title: "День Рождения", src: "/icons/hb.png", link: "/" },
-  { title: "Банкет", src: "/icons/banquet.png", link: "/" },
-  { title: "Детям", src: "/icons/kids.png", link: "/" },
-  { title: "Спорт", src: "/icons/sport.png", link: "/" },
-  { title: "СПА", src: "/icons/spa.png", link: "/" },
+  { title: "Свадьба", src: "/icon/marriage.png", link: "/" },
+  { title: "Корпаратив", src: "/icon/corp.png", link: "/" },
+  { title: "День Рождения", src: "/icon/hb.png", link: "/" },
+  { title: "Банкет", src: "/icon/banquet.png", link: "/" },
+  { title: "Детям", src: "/icon/kids.png", link: "/" },
+  { title: "Спорт", src: "/icon/sport.png", link: "/" },
+  { title: "СПА", src: "/icon/spa.png", link: "/" },
 ];
 </script>
 
