@@ -1,10 +1,10 @@
 <template>
   <div class="info">
     <ListCardTitle :title="title" />
-    <p class="params">
+    <ListCardParams>
       {{ params.s }}м<sup>2</sup> до {{ params.guests }} мест
       {{ params.rooms }} комн.
-    </p>
+    </ListCardParams>
     <ContentMD :content="info.description" />
     <ListOccupationFooter
       :price="info.price"
@@ -22,15 +22,5 @@ const props = defineProps(["title", "params", "info"]);
 .info {
   height: 100%;
   position: relative;
-}
-p {
-  font-size: 1.6rem;
-}
-.params {
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-}
-sup {
-  font-size: 0.8rem;
 }
 </style>

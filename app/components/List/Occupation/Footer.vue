@@ -1,10 +1,10 @@
 <template>
   <div class="footer">
     <Price :value="price" from />
-    <div class="buttons">
+    <ListCardButtons>
       <ButtonNude label="Подробнее" noArrow noBold :to="link" />
       <ButtonNude label="Забронировать" :to="bookLink" />
-    </div>
+    </ListCardButtons>
   </div>
 </template>
 
@@ -22,15 +22,9 @@ const props = defineProps(["price", "link", "bookLink"]);
   left: 0;
   right: 0;
 }
-.buttons > a:first-child {
-  margin-right: 2vw;
-}
 @media (max-width: 1020px) {
   .footer {
     display: block;
-  }
-  .buttons {
-    margin-right: unset;
   }
 }
 </style>

@@ -7,10 +7,21 @@
 
 <script setup>
 const route = useRoute();
-const poster = route.meta?.poster
-  ? route.meta.poster
-  : "/images/posters/hotel.jpg";
+const poster = ref(
+  route.meta?.poster ? route.meta.poster : "/images/posters/hotel.jpg",
+);
 // console.log(route.meta);
+watch(
+  route,
+  (newRoute) => {
+    if (newRoute.meta?.poster) {
+      poster.value = newRoute.meta.poster;
+    } else {
+      poster.value = "/images/posters/hotel.jpg";
+    }
+  },
+  // { deep: true, immediate: true },
+);
 </script>
 
 <style scoped>

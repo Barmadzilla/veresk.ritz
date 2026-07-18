@@ -39,18 +39,18 @@
 const open = ref(false);
 const menu = [
   { type: "separator" },
-  { title: "Отель, глемпинг и дачи", to: "hotel", type: "item" },
-  { title: "Рестораны", to: "restorants", type: "item" },
-  { title: "Бизнес встречи", to: "business-events", type: "item" },
-  { title: "Свадебные торжeства", to: "wedding", type: "item" },
-  { title: "Корпоративные праздники", to: "corporate-events", type: "item" },
-  { title: "СПА-комплекс", to: "spa-resort", type: "item" },
+  { title: "Отель, глемпинг и дачи", to: "/hotel", type: "item" },
+  { title: "Рестораны", to: "/restorants", type: "item" },
+  { title: "Бизнес встречи", to: "/business-events", type: "item" },
+  { title: "Свадебные торжeства", to: "/wedding", type: "item" },
+  { title: "Корпоративные праздники", to: "/corporate-events", type: "item" },
+  { title: "СПА-комплекс", to: "/spa-resort", type: "item" },
   { type: "separator" },
-  { title: "Афиша мероприятий Верeска", to: "events", type: "item" },
-  { title: "Подарочные сертификаты", to: "sertificates", type: "item" },
-  { title: "Вопросф и ответы", to: "faq", type: "item" },
-  { title: "Эко-Парк", to: "eco-park", type: "item" },
-  { title: "Свяжитесь с нами", to: "eco-park", type: "item" },
+  { title: "Афиша мероприятий Верeска", to: "/events", type: "item" },
+  { title: "Подарочные сертификаты", to: "/sertificates", type: "item" },
+  { title: "Вопросф и ответы", to: "/faq", type: "item" },
+  { title: "Эко-Парк", to: "/eco-park", type: "item" },
+  { title: "Свяжитесь с нами", to: "/contacts", type: "item" },
 ];
 const contacts = [
   {

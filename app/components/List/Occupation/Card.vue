@@ -1,5 +1,5 @@
 <template>
-  <section class="list-card">
+  <ListCard>
     <ListImage :src="data.images" />
     <ListCardContent>
       <ListOccupationInfo
@@ -8,19 +8,9 @@
         :info="data.info"
       />
     </ListCardContent>
-  </section>
+  </ListCard>
 </template>
 
 <script setup>
 const props = defineProps(["data"]);
 </script>
-
-<style scoped>
-.list-card {
-  display: flex;
-  justify-content: start;
-  text-align: left;
-  gap: 8rem;
-  margin-bottom: 8rem;
-}
-</style>

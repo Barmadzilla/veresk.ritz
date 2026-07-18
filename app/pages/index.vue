@@ -15,6 +15,7 @@
 <script setup>
 definePageMeta({
   layout: "home",
+  poster: "/images/posters/hotel.jpg",
 });
 const sliderData = sliderCards();
 const introText =

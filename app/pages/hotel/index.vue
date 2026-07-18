@@ -3,7 +3,7 @@
     <BreadCrumbs />
     <TitleMain :title="title" />
     <ContentTextBlock :data="text" />
-    <ListCard v-for="(item, i) in occupation" :data="item" />
+    <ListOccupationCard v-for="(item, i) in occupation" :data="item" />
   </div>
 </template>
 

@@ -17,7 +17,7 @@ img {
   display: inline-block;
   text-decoration: none;
   color: #666;
-  positon: relative;
+  position: relative;
 }
 .item * {
   transition: all 200ms;
