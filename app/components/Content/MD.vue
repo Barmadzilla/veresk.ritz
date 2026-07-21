@@ -10,6 +10,8 @@ const props = defineProps(["content"]);
 <style>
 .md p {
   font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1.7rem;
 }
 .md strong,
 .md b {

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <VueMarkdown :markdown="data" />
+    <VueMarkdown :markdown="data?.text ? data.text : data" />
     <slot />
   </section>
 </template>
