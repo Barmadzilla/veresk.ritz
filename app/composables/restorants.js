@@ -2,6 +2,7 @@ export const restorantsData = () => {
   return useState("restorantsData", () => [
     {
       title: 'Ресторан на озере "Вереск" ',
+      slug: "veresk",
       images: ["/images/restorants/veresk.jpg"],
       services: ["breakfast", "lunch", "dinner"],
       description:
@@ -12,6 +13,7 @@ export const restorantsData = () => {
     },
     {
       title: 'Ресторан "Примавера"',
+      slug: "primavera",
       images: ["/images/restorants/primavera.jpg"],
       services: ["breakfast"],
       description:
@@ -22,6 +24,7 @@ export const restorantsData = () => {
     },
     {
       title: 'Пиццерия "Лавка"',
+      slug: "pizzeria",
       images: ["/images/restorants/pizzeria.jpg"],
       services: ["fastfood"],
       description:
