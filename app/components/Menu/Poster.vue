@@ -1,27 +1,15 @@
 <template>
   <div class="container">
     <div class="gradient" />
-    <img :src="poster" />
+    <ClientOnly>
+      <img :src="poster" />
+    </ClientOnly>
   </div>
 </template>
 
 <script setup>
 const route = useRoute();
-const poster = ref(
-  route.meta?.poster ? route.meta.poster : "/images/posters/hotel.jpg",
-);
-// console.log(route.meta);
-watch(
-  route,
-  (newRoute) => {
-    if (newRoute.meta?.poster) {
-      poster.value = newRoute.meta.poster;
-    } else {
-      poster.value = "/images/posters/hotel.jpg";
-    }
-  },
-  // { deep: true, immediate: true },
-);
+const poster = setPoster();
 </script>
 
 <style scoped>
