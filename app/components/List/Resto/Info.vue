@@ -18,7 +18,6 @@ const props = defineProps([
   "link",
   "book",
 ]);
-moment.locale("ru");
 const from = moment()
   .set({
     hour: props.params.from.h,
