@@ -13,8 +13,10 @@ const title = "Номера, сьюты, дома и глемпинг";
 
 definePageMeta({
   title,
-  poster: "/images/posters/dacha.jpg",
 });
+
+const poster = setPoster();
+poster.value = "/images/posters/dacha.jpg";
 
 const text =
   "Добро пожаловать в ВерескОтель — идеальное место для тех, кто ищет сочетание комфорта, живописных видов и разнообразных возможностей для отдыха. У нас большое количество вариантов размещения на любой вкус! ";

@@ -2,10 +2,10 @@
   <div>
     <BreadCrumbs :current="room.title" />
     <TitleMain :title="room.title" />
-    <p class="params">
+    <ContentParams>
       {{ room.params.s }}м<sup>2</sup> &bull; до {{ room.params.guests }} мест
       &bull; {{ room.params.rooms }} комн.
-    </p>
+    </ContentParams>
     <ButtonGroup>
       <Price :value="room.info.price" from curr="руб/ночь" large />
       <ButtonSolid label="Забронировать" to="/" />
@@ -31,19 +31,10 @@ const route = useRoute();
 const data = occupationData();
 const room = data.value.find((item) => item.slug == route.params.room[0]);
 
+const poster = setPoster();
+poster.value = room.slideShow[0].src;
+
 definePageMeta({
   parent: [{ title: "Отель", slug: "/hotel" }],
 });
 </script>
-
-<style scoped>
-.params {
-  font-weight: 500;
-  margin-top: -1.4rem;
-  margin-bottom: 5rem;
-  font-size: 1.8rem;
-}
-sup {
-  font-size: 0.8rem;
-}
-</style>
