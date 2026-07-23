@@ -17,4 +17,14 @@ const props = defineProps(["content"]);
 .md b {
   font-weight: 500;
 }
+.md ul {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+}
+.md ul li::marker {
+  color: var(--color-primary);
+}
+.md ul li {
+  margin-bottom: 0.7rem;
+}
 </style>
