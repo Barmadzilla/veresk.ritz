@@ -3,7 +3,7 @@
     <ContentPicture :src="data.images" />
     <div>
       <TitleSecondary :title="data.title" left />
-      <ContentSubHeader :content="data?.schedule" />
+      <ContentSubHeader :content="data?.subtitle" />
       <ContentFeatures v-if="data?.features" :data="data.features" />
       <ContentMD :content="data.text" />
       <div class="space" />
