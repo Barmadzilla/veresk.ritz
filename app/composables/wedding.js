@@ -2,7 +2,7 @@ export const weddingData = () => {
   return useState("weddingData", () => {
     return {
       title: "Свадебные торжества",
-      poster: "/images/posters/restorants.jpg",
+      poster: "/images/posters/wedding.jpg",
       content: [
         {
           type: "textBlock",
@@ -31,7 +31,12 @@ export const weddingData = () => {
           text: `Мы предлагаем несколько вариантов банкетного меню, дружелюбный и ненавязчивый сервис, помощь с оформлением и организацией вашего праздника. \n\n
 Наши повара и официанты — настоящие мастера своего дела. Оригинальная подача, яркие сочетания, традиционные рецепты и настоящее гастрономическое удовольствие — вместе мы составим идеальное меню для вашего праздника и выберем подходящие напитки.`,
           images: ["/images/wedding/occupation.jpg"],
+          buttons: [
+            { label: "Отель", to: "/hotel" },
+            { label: "СПА-Комплекс", to: "/spa-resort" },
+          ],
         },
+        { type: "space" },
         {
           type: "textBlock",
           title: "Локации",
