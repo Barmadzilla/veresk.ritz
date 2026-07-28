@@ -1,10 +1,19 @@
 <template>
-  <div class="group">
+  <div
+    :class="[
+      'group',
+      { left },
+      { right },
+      { 'no-margin': noMargin != undefined },
+    ]"
+  >
     <slot />
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const props = defineProps(["left", "right", "noMargin"]);
+</script>
 
 <style scoped>
 .group {
@@ -12,7 +21,15 @@
   justify-content: center;
   align-items: center;
   gap: 4rem;
-
   margin-bottom: 5rem;
+}
+.left {
+  justify-content: start;
+}
+.right {
+  justify-content: end;
+}
+.no-margin {
+  margin-bottom: 0;
 }
 </style>
