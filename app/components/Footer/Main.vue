@@ -49,9 +49,9 @@ const docs = [
 const main = [
   { title: "Отель", link: "/hotel" },
   { title: "СПА", link: "/spa-resort" },
-  { title: "Рестораны", link: "#" },
+  { title: "Рестораны", link: "/restorants" },
   { title: "Банкетные залы", link: "#" },
-  { title: "Свадьбы", link: "#" },
+  { title: "Свадьбы", link: "/wedding" },
   { title: "Детям", link: "#" },
   { title: "Спорт клуб", link: "#" },
   { title: "F.A.Q.", link: "#" },

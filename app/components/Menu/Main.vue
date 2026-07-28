@@ -48,7 +48,7 @@ const menu = [
   { type: "separator" },
   { title: "Афиша мероприятий Верeска", to: "/events", type: "item" },
   { title: "Подарочные сертификаты", to: "/sertificates", type: "item" },
-  { title: "Вопросф и ответы", to: "/faq", type: "item" },
+  { title: "Вопросы и ответы", to: "/faq", type: "item" },
   { title: "Эко-Парк", to: "/eco-park", type: "item" },
   { title: "Свяжитесь с нами", to: "/contacts", type: "item" },
 ];
