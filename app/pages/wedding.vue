@@ -19,7 +19,9 @@
             ? TextBlock
             : item.type == 'slideShow'
               ? SlideShow
-              : null
+              : item.type == 'space'
+                ? Space
+                : null
       "
       v-bind="
         item.type == 'slideShow'
@@ -35,10 +37,12 @@
 const TextAndPic = resolveComponent("ContentTextAndPic");
 const TextBlock = resolveComponent("ContentTextBlock");
 const SlideShow = resolveComponent("SliderContainer");
+const Space = resolveComponent("ContentSpace");
 
 const data = weddingData();
 
-definePageMeta({});
+const poster = setPoster();
+poster.value = data.value.poster;
 </script>
 
 <style scoped></style>
