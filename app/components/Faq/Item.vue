@@ -23,14 +23,15 @@ import { VueMarkdown } from "@crazydos/vue-markdown";
 }
 .description ul {
   /* list-style-position: inside; */
+  font-size: 1.8rem;
   margin-left: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem;
 }
 .description ul li::marker {
   color: var(--color-primary);
 }
 .description strong {
-  /* font-weight: 600; */
+  font-weight: 500;
   color: var(--color-primary);
 }
 </style>
