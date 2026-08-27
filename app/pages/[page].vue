@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="data">
     <BreadCrumbs :current="data.title" />
     <TitleMain :title="data.title" />
     <component
@@ -46,12 +46,18 @@ const route = useRoute();
 
 const content = {
   "corporate-events": corpEventData(),
+  "business-events": businessEventData(),
 };
 
-const data = ref(content[route.params.page[0]]);
+const data = ref(content[route.params.page]);
+console.log(data.value);
+if (data.value == undefined || data.value.length == 0) {
+  throw createError({
+    status: 404,
+    message: "Страница не найдена",
+  });
+}
 
 const poster = setPoster();
 poster.value = data.value.poster;
 </script>
-
-<style scoped></style>
