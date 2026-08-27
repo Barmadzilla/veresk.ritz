@@ -33,6 +33,12 @@ section :deep(ul li) {
 section :deep(ul li::marker) {
   color: var(--color-primary);
 }
+section :deep(h3) {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
 section {
   padding: 0 12rem 0;
   margin-bottom: 5rem;
