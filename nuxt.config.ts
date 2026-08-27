@@ -24,4 +24,12 @@ export default defineNuxtConfig({
       "~/composables/**",
     ],
   },
+  // routeRules: {
+  //   // Generates a 200.html for client-side routing fallbacks
+  //   "/200.html": { prerender: true },
+  //
+  //   // Generates a 404.html if your host relies on it for page misses
+  //   "/404.html": { prerender: true },
+  // },
+  nitro: { prerender: { crawlLinks: true, routes: ["/", "/404.html"] } },
 });
