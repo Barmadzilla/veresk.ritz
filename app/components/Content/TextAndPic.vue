@@ -2,7 +2,7 @@
   <section class="text-and-pic" :class="{ reverse: !reverse }">
     <ContentPicture :src="data.images" />
     <div>
-      <TitleSecondary :title="data.title" left />
+      <TitleSecondary v-if="data.title" :title="data.title" left />
       <ContentSubHeader :content="data?.subtitle" />
       <ContentFeatures v-if="data?.features" :data="data.features" />
       <ContentMD :content="data.text" />
