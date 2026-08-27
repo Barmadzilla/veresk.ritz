@@ -9,7 +9,7 @@ const props = defineProps(["data"]);
 
 const defaultData = [
   { title: "Свадьба", src: "/icon/marriage.png", link: "/wedding" },
-  { title: "Корпаратив", src: "/icon/corp.png", link: "/corparate-events" },
+  { title: "Корпаратив", src: "/icon/corp.png", link: "/corporate-events" },
   { title: "День Рождения", src: "/icon/hb.png", link: "/" },
   { title: "Банкет", src: "/icon/banquet.png", link: "/" },
   { title: "Детям", src: "/icon/kids.png", link: "/" },
