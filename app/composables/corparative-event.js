@@ -2,7 +2,7 @@ export const corpEventData = () => {
   return useState("corpEventData", () => {
     return {
       title: "Корпоративные мероприятия",
-      poster: "/images/posters/wedding.jpg",
+      poster: "/images/posters/corp.jpg",
       content: [
         {
           type: "textBlock",
