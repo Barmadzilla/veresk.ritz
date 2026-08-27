@@ -17,27 +17,12 @@
 const props = defineProps(["data", "filter"]);
 import { VueMarkdown } from "@crazydos/vue-markdown";
 </script>
-<style>
-.description p {
-  font-size: 1.8rem;
-}
-.description ul {
-  /* list-style-position: inside; */
-  font-size: 1.8rem;
-  margin-left: 1.5rem;
-  padding: 1.5rem;
-}
-.description ul li::marker {
-  color: var(--color-primary);
-}
-.description strong {
-  font-weight: 500;
-  color: var(--color-primary);
-}
-</style>
+
 <style scoped>
 .tab {
   border-bottom: 1px solid #e3e3e3;
+  width: min(90rem, 100%);
+  margin: 0 auto;
 }
 .description {
   text-align: left;
@@ -51,6 +36,25 @@ import { VueMarkdown } from "@crazydos/vue-markdown";
 .description.open {
   max-height: 70rem;
   padding-bottom: 2.5rem;
+}
+.description :deep(a) {
+  color: var(--color-link);
+}
+.description :deep(p) {
+  font-size: 1.8rem;
+}
+.description :deep(strong) {
+  font-weight: 500;
+  color: var(--color-primary);
+}
+.description :deep(ul) {
+  /* list-style-position: inside; */
+  font-size: 1.8rem;
+  margin-left: 1.5rem;
+  padding: 1.5rem;
+}
+.description :deep(li::marker) {
+  color: var(--color-primary);
 }
 h4 {
   font-size: 2rem;
