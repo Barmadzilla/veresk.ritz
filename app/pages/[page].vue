@@ -2,6 +2,7 @@
   <div v-if="data">
     <BreadCrumbs :current="data.title" />
     <TitleMain :title="data.title" />
+    <ContentParams>{{ data.subtitle }}</ContentParams>
     <component
       v-for="(item, index) in data.content"
       :key="index"
@@ -47,10 +48,11 @@ const route = useRoute();
 const content = {
   "corporate-events": corpEventData(),
   "business-events": businessEventData(),
+  "eco-park": ecoParkData(),
+  "for-kids": forKidsData(),
 };
 
 const data = ref(content[route.params.page]);
-console.log(data.value);
 if (data.value == undefined || data.value.length == 0) {
   throw createError({
     status: 404,
