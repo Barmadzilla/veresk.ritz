@@ -2,7 +2,7 @@ export const faqData = () => {
   return useState("faqData", () => {
     return {
       title: "Вопросы и Ответы",
-      poster: "/images/posters/veresk-for-kids.jpg",
+      poster: "/images/posters/hotel.jpg",
       // subtitle: `Вход в парк бесплатный. Время работы парка — ежедневно с 10:00 до 22:00`,
       content: [
         {
