@@ -12,6 +12,10 @@ const name = {
   "for-kids": "Для детей",
   spa: "СПА",
   gym: "Тренажерный зал",
+  veresk: "Номер",
+  dachi: "Коттедж",
+  aparts: "Апартаменты",
+  terrasa: "Глэмпинг",
 };
 const tag = name[props.type];
 </script>
