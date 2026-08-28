@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && rsync -avh --delete --exclude=.DS_Store dist/ reg.ru:freshnet/veresk/"
+    "deploy": "npm run generate && rsync -avh --delete --exclude=.DS_Store .output/public/ reg.ru:freshnet/veresk/"
   },
   "dependencies": {
     "@crazydos/vue-markdown": "^1.0.2",
