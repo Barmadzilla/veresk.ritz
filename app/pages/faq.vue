@@ -26,7 +26,6 @@ const data = faqData();
 const tags = [
   ...new Set(data.value.content.reduce((a, b) => [...a, ...b.type], ["all"])),
 ];
-console.log(tags);
 //adding open prop to items and reactivity
 const faq = ref(
   data.value.content.map((item) => {
