@@ -66,7 +66,7 @@ onMounted(() => {
   scrollContainer.value.scrollTo(0, 0);
   window.addEventListener("resize", setWidth); //слушаем ширину при изменении размеров окна
   // scrollContainer.value.scrollTo(0, 0);
-  console.log();
+  // console.log();
 });
 
 // onBeforeUnmounted(() => {
