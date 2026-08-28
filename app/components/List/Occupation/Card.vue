@@ -1,5 +1,5 @@
 <template>
-  <ListCard>
+  <ListCard v-if="data.info.type == filter || 'all' == filter">
     <ListImage :src="data.images" />
     <ListCardContent>
       <ListOccupationInfo
@@ -12,5 +12,5 @@
 </template>
 
 <script setup>
-const props = defineProps(["data"]);
+const props = defineProps(["data", "filter"]);
 </script>
