@@ -8,7 +8,12 @@
     </ContentParams>
     <ButtonGroup>
       <Price :value="room.info.price" from curr="руб/ночь" large />
-      <ButtonSolid label="Забронировать" to="/" />
+      <ButtonSolid
+        label="Забронировать"
+        data-tl-booking-open="true"
+        :data-tl-room="room.tl.room"
+        :data-tl-booking-scenario="room.tl.hotel"
+      />
     </ButtonGroup>
     <ContentTextBlock :data="room.info.description" />
     <ButtonGroup>
@@ -32,7 +37,7 @@ const data = occupationData();
 const room = data.value.find((item) => item.slug == route.params.room[0]);
 
 const poster = setPoster();
-poster.value = room.slideShow[0].src;
+poster.value = room.images[0];
 
 definePageMeta({
   parent: [{ title: "Отель", slug: "/hotel" }],
