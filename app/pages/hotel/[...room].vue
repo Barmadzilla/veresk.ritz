@@ -16,9 +16,13 @@
       />
     </ButtonGroup>
     <ContentTextBlock :data="room.info.description" />
+    <Modal :open-modal="modal" @close="closeModal">
+      <ContentTour v-if="vr" :config="room.vr" />
+      <ContentVideo v-if="video" :video="'/video/dachi/dachi'" />
+    </Modal>
     <ButtonGroup>
-      <ButtonRoomMedia type="virtual-tour" />
-      <ButtonRoomMedia type="video" />
+      <ButtonRoomMedia v-if="room?.vr" @click="openVR" type="virtual-tour" />
+      <ButtonRoomMedia @click="openVideo" type="video" />
       <ButtonRoomMedia type="gallery" />
     </ButtonGroup>
     <SliderContainer type="image" cards="1" :data="room.slideShow" />
@@ -35,6 +39,24 @@
 const route = useRoute();
 const data = occupationData();
 const room = data.value.find((item) => item.slug == route.params.room[0]);
+
+const modal = ref(false);
+const vr = ref(false);
+const video = ref(false);
+
+const closeModal = () => {
+  modal.value = false;
+  vr.value = false;
+  video.value = false;
+};
+const openVideo = () => {
+  modal.value = true;
+  video.value = true;
+};
+const openVR = () => {
+  modal.value = true;
+  vr.value = true;
+};
 
 const poster = setPoster();
 poster.value = room.images[0];

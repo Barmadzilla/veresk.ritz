@@ -39,6 +39,10 @@ const tags = [
   "all",
   ...new Set(occupation.value.flatMap((room) => room.info.type)),
 ];
+setSeo({
+  title,
+  excerpt: text,
+});
 </script>
 
 <style scoped></style>
