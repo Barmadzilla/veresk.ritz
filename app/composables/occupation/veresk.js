@@ -6,6 +6,7 @@ export const vereskRoomsData = () => {
       params: { s: "24", rooms: "1", guests: "2" },
       images: ["/images/occupation/veresk/standart/standart-1.jpg"],
       tl: { room: 329453, hotel: 53273 },
+      vr: vereskStandartVR(),
       info: {
         price: 10800,
         link: "/hotel/standart",
@@ -28,6 +29,7 @@ export const vereskRoomsData = () => {
       params: { s: "28-40", rooms: "1", guests: "3" },
       images: ["/images/occupation/veresk/suit-lake-view/suit-lake-view.jpg"],
       tl: { room: 329454, hotel: 53273 },
+      vr: vereskSuitVR(),
       info: {
         price: 13950,
         link: "/hotel/junior-suit-lake-view",
@@ -70,6 +72,7 @@ export const vereskRoomsData = () => {
       params: { s: "35-45", rooms: "2", guests: "4" },
       images: ["/images/occupation/veresk/suit-junior/suit-junior.jpg"],
       tl: { room: 329455, hotel: 53273 },
+      vr: vereskSuitJuniorVR(),
       info: {
         price: 13950,
         link: "/hotel/junior-suit",

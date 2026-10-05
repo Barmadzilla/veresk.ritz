@@ -1,125 +1,86 @@
 export const sibiryakovRoomsData = () => {
-  return useState("sibiryakovRoomsData", () => [
-    {
-      title: "Стандарт",
-      slug: "standart",
-      params: { s: "24", rooms: "1", guests: "2" },
-      images: ["/images/occupation/standart-1.jpg"],
-      tl: { room: 329453, hotel: 53273 },
-      info: {
-        price: 10800,
-        link: "/hotel/standart",
-        bookLink: "/",
-        type: "veresk",
-        description: `Номер Стандарт — уют для двоих.  
-Уютный номер для пары или сольного путешествия. Первый этаж — это про удобство: быстрое заселение, шаг до базовой инфраструктуры отеля (бассейн, ресторан для завтраков) и никакой суеты с лестницами.`,
-      },
-      slideShow: [
-        { src: "/images/occupation/standart/standart-1.jpeg" },
-        { src: "/images/occupation/standart/standart-2.jpeg" },
-        { src: "/images/occupation/standart/standart-3.jpeg" },
-      ],
-      features: ["wifi", "air-conditioner", "vault", "kingsize-bed"],
-    },
-    {
-      title: "Джуниор сьют с видом на озеро",
-      slug: "suit-junior-lake-view",
-      params: { s: "28-40", rooms: "1", guests: "3" },
-      images: ["/images/occupation/veresk/suit-lake-view/suit-lake-view.jpg"],
-      tl: { room: 329454, hotel: 53273 },
-      info: {
-        price: 13950,
-        link: "/hotel/junior-suit-lake-view",
-        bookLink: "/",
-        type: "veresk",
-        description: `Джуниор Сьют с видом на озеро. Просторный номер от 28 м² с гостиной и спальной зонами. Располагается на первом и втором этажах. В каждом номере — балкон с открытым видом на озеро: утренний кофе, тишина и свежий воздух — как отдельный ритуал.`,
-      },
-      slideShow: [
-        {
-          src: "/images/occupation/veresk/suit-lake-view/suit-lake-view-1.jpeg",
-        },
-        {
-          src: "/images/occupation/veresk/suit-lake-view/suit-lake-view-2.jpeg",
-        },
-        {
-          src: "/images/occupation/veresk/suit-lake-view/suit-lake-view-3.jpeg",
-        },
-        {
-          src: "/images/occupation/veresk/suit-lake-view/suit-lake-view-4.jpeg",
-        },
-        {
-          src: "/images/occupation/veresk/suit-lake-view/suit-lake-view-5.jpeg",
-        },
-        {
-          src: "/images/occupation/veresk/suit-lake-view/suit-lake-view-6.jpeg",
-        },
-        {
-          src: "/images/occupation/veresk/suit-lake-view/suit-lake-view-7.jpeg",
-        },
-        {
-          src: "/images/occupation/veresk/suit-lake-view/suit-lake-view-8.jpeg",
-        },
-      ],
-      features: ["wifi", "air-conditioner", "vault", "kingsize-bed"],
-    },
-    {
-      title: "Джуниор Сьют",
-      slug: "suit-junior",
-      params: { s: "35-45", rooms: "2", guests: "4" },
-      images: ["/images/occupation/apart-1.jpg"],
-      info: {
-        price: 13950,
-        link: "/hotel/veresk-apart-with-sauna",
-        bookLink: "/",
-        type: "veresk",
-        description: `Джуниор-сьют. Просторный двухкомнатный номер от 37 м²: отдельная спальня и гостиная — для личного пространства и спокойствия. Номера расположены на 1‑м и 2‑м этажах; в каждом — балкон для утреннего кофе на свежем воздухе и тихих вечеров. Полноценная ванная комната — для комфортных сборов и расслабления.`,
-      },
-      slideShow: [
-        { src: "/images/occupation/standart/standart-1.jpeg" },
-        { src: "/images/occupation/standart/standart-2.jpeg" },
-        { src: "/images/occupation/standart/standart-3.jpeg" },
-      ],
-      features: ["wifi", "air-conditioner", "vault", "kingsize-bed"],
-    },
-    {
-      title: "Сьют",
-      slug: "suit",
-      params: { s: "60", rooms: "2", guests: "4" },
-      images: ["/images/occupation/apart-1.jpg"],
-      info: {
-        price: 18000,
-        link: "/hotel/veresk-apart-with-sauna",
-        bookLink: "/",
-        type: "veresk",
-        description: `Сьют — двухуровневое пространство для особых моментов.  
-Уникальный двухуровневый сьют площадью 78 м² на 2‑м этаже. Нежные пастельные тона и продуманный декор создают романтичную атмосферу. Большие окна наполняют номер естественным светом и усиливают ощущение уединения. Идеально для молодожёнов, годовщин и камерных праздников вдвоём.`,
-      },
-      slideShow: [
-        { src: "/images/occupation/standart/standart-1.jpeg" },
-        { src: "/images/occupation/standart/standart-2.jpeg" },
-        { src: "/images/occupation/standart/standart-3.jpeg" },
-      ],
-      features: ["wifi", "air-conditioner", "vault", "kingsize-bed"],
-    },
-    {
-      title: "Семейный Сьют",
-      slug: "suit-family",
-      params: { s: "70-80", rooms: "4", guests: "6" },
-      images: ["/images/occupation/apart-1.jpg"],
-      info: {
-        price: 30400,
-        link: "/hotel/veresk-apart-with-sauna",
-        bookLink: "/",
-        type: "veresk",
-        description: `Сьют — двухуровневое пространство для особых моментов.  
-Уникальный двухуровневый сьют площадью 78 м² на 2‑м этаже. Нежные пастельные тона и продуманный декор создают романтичную атмосферу. Большие окна наполняют номер естественным светом и усиливают ощущение уединения. Идеально для молодожёнов, годовщин и камерных праздников вдвоём.`,
-      },
-      slideShow: [
-        { src: "/images/occupation/standart/standart-1.jpeg" },
-        { src: "/images/occupation/standart/standart-2.jpeg" },
-        { src: "/images/occupation/standart/standart-3.jpeg" },
-      ],
-      features: ["wifi", "air-conditioner", "vault", "kingsize-bed"],
-    },
-  ]);
+	return useState("sibiryakovRoomsData", () => [
+		{
+			title: "Делюкс",
+			slug: "delux",
+			params: { s: "40", rooms: "1", guests: "3" },
+			images: ["/images/occupation/sibiryakov/delux/delux-card.jpeg"],
+			tl: { room: 329454, hotel: 53273 },
+			info: {
+				price: 19000,
+				link: "/hotel/delux",
+				bookLink: "/",
+				type: "sibiryakov",
+				description: `Отель расположен на первой береговой линии — до пляжа рукой подать. Каждый вечер гостей ждут потрясающие закаты над озером. Здесь легко забыть о суете и просто наслаждаться моментом. Это по‑настоящему прекрасное место для перезагрузки.`,
+			},
+			slideShow: [
+				{ src: "/images/occupation/sibiryakov/delux/slides/delux-1.jpeg" },
+				{ src: "/images/occupation/sibiryakov/delux/slides/delux-2.jpeg" },
+				{ src: "/images/occupation/sibiryakov/delux/slides/delux-3.jpeg" },
+				{ src: "/images/occupation/sibiryakov/delux/slides/delux-4.jpeg" },
+				{ src: "/images/occupation/sibiryakov/delux/slides/delux-5.jpeg" },
+				{ src: "/images/occupation/sibiryakov/delux/slides/delux-6.jpeg" },
+				{ src: "/images/occupation/sibiryakov/delux/slides/delux-7.jpeg" },
+			],
+			features: ["wifi", "air-conditioner", "vault", "kingsize-bed"],
+		},
+		{
+			title: "Люкс",
+			slug: "lux",
+			params: { s: "50", rooms: "1", guests: "2" },
+			images: ["/images/occupation/sibiryakov/lux/lux-card.jpeg"],
+			tl: { room: 329453, hotel: 53273 },
+			info: {
+				price: 21800,
+				link: "/hotel/lux",
+				bookLink: "/",
+				type: "sibiryakov",
+				description: `основной фонд отеля, где продуман каждый сантиметр пространства.`,
+			},
+			slideShow: [
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-1.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-2.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-3.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-4.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-5.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-6.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-7.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-8.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-9.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-10.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-11.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-11.jpeg" },
+				{ src: "/images/occupation/sibiryakov/lux/slides/lux-13.jpeg" },
+			],
+			features: ["wifi", "air-conditioner", "vault", "kingsize-bed"],
+		},
+		{
+			title: "Сьют",
+			slug: "sibiryakov-suit",
+			params: { s: "75", rooms: "2", guests: "4" },
+			images: ["/images/occupation/sibiryakov/suit/suit-card.jpeg"],
+			tl: { room: 329453, hotel: 53273 },
+			info: {
+				price: 40950,
+				link: "/hotel/sibiryakov-suit",
+				bookLink: "/",
+				type: "sibiryakov",
+				description: `номера с богатым интерьером и камином: для тех, кто хочет максимального комфорта и атмосферы.`,
+			},
+			slideShow: [
+				{ src: "/images/occupation/sibiryakov/suit/slides/suit-1.jpeg" },
+				{ src: "/images/occupation/sibiryakov/suit/slides/suit-2.jpeg" },
+				{ src: "/images/occupation/sibiryakov/suit/slides/suit-3.jpeg" },
+				{ src: "/images/occupation/sibiryakov/suit/slides/suit-4.jpeg" },
+				{ src: "/images/occupation/sibiryakov/suit/slides/suit-5.jpeg" },
+				{ src: "/images/occupation/sibiryakov/suit/slides/suit-6.jpeg" },
+				{ src: "/images/occupation/sibiryakov/suit/slides/suit-7.jpeg" },
+				{ src: "/images/occupation/sibiryakov/suit/slides/suit-8.jpeg" },
+				{ src: "/images/occupation/sibiryakov/suit/slides/suit-9.jpeg" },
+				{ src: "/images/occupation/sibiryakov/suit/slides/suit-10.jpeg" },
+				{ src: "/images/occupation/sibiryakov/suit/slides/suit-11.jpeg" },
+			],
+			features: ["wifi", "air-conditioner", "vault", "kingsize-bed"],
+		},
+	]);
 };

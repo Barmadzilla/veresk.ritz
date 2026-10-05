@@ -6,6 +6,7 @@ export const apartsData = () => {
       params: { s: "50", rooms: "2", guests: "4" },
       images: ["/images/occupation/aparts/apart-sauna/apart-sauna.jpg"],
       tl: { room: 329456, hotel: 53273 },
+      vr: apartsVR(),
       info: {
         price: 15300,
         link: "/hotel/apart-sauna",
@@ -54,6 +55,7 @@ export const apartsData = () => {
       params: { s: "50", rooms: "2", guests: "4" },
       images: ["/images/occupation/aparts/apart/apart.jpg"],
       tl: { room: 329457, hotel: 53273 },
+      vr: apartsVR(),
       info: {
         price: 14400,
         link: "/hotel/apart",
@@ -82,6 +84,7 @@ export const apartsData = () => {
       params: { s: "64", rooms: "2", guests: "4" },
       images: ["/images/occupation/aparts/hygge/hygge.jpg"],
       tl: { room: 333763, hotel: 53273 },
+      vr: hyggeVR(),
       info: {
         price: 25500,
         link: "/hotel/hygge",

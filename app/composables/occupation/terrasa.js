@@ -6,6 +6,7 @@ export const terrasaRoomsData = () => {
       params: { s: "24", rooms: "1", guests: "2" },
       images: ["/images/occupation/terrasa/lodge-hill/lodge-hill.jpg"],
       tl: { room: 265465, hotel: 41774 },
+      vr: terrasaVR(),
       info: {
         price: 9000,
         link: "/hotel/lodge-hill-lake-view",
@@ -57,6 +58,7 @@ export const terrasaRoomsData = () => {
       params: { s: "24", rooms: "1", guests: "2" },
       images: ["/images/occupation/terrasa/lodge-forest/lodge-forest.jpg"],
       tl: { room: 354089, hotel: 41774 },
+      vr: terrasaVR(),
       info: {
         price: 9000,
         link: "/hotel/lodge-forest",
@@ -104,6 +106,7 @@ export const terrasaRoomsData = () => {
         "/images/occupation/terrasa/lodge-hill-tube/lodge-hill-tube.jpg",
       ],
       tl: { room: 358204, hotel: 41774 },
+      vr: terrasaVR(),
       info: {
         price: 9000,
         link: "/hotel/lodge-hill-tube",
@@ -149,6 +152,7 @@ export const terrasaRoomsData = () => {
       params: { s: "48", rooms: "2", guests: "4" },
       images: ["/images/occupation/terrasa/lodge-terrasa/lodge-terrasa.jpg"],
       tl: { room: 292791, hotel: 41774 },
+      vr: terrasaVR(),
       info: {
         price: 25500,
         link: "/hotel/lodge-terrasa",

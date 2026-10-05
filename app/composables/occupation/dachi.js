@@ -6,6 +6,7 @@ export const dachiData = () => {
       params: { s: "54", rooms: "2", guests: "4" },
       images: ["/images/occupation/dachi/first-line/dachi-first-line.jpg"],
       tl: { room: 329447, hotel: 53273 },
+      vr: dachiVR(),
       info: {
         price: 20000,
         link: "/hotel/dachi-first-line",
@@ -54,6 +55,7 @@ export const dachiData = () => {
       params: { s: "54", rooms: "2", guests: "4" },
       images: ["/images/occupation/dachi/second-line/dachi-second-line.jpg"],
       tl: { room: 329448, hotel: 53273 },
+      vr: dachiVR(),
       info: {
         price: 14400,
         link: "/hotel/dachi-second-line",
