@@ -1,27 +1,25 @@
 <template>
   <section>
     <header>
-      <NuxtLink :to="data.link"><img :src="data.src" /></NuxtLink>
+      <img :src="data.data.images[0]" />
     </header>
-    <NuxtLink :to="data.link">
-      <h2>{{ data.title }}</h2>
-    </NuxtLink>
-    <p>{{ data.description }}</p>
+    <h2>{{ eventDate }}</h2>
+    <p>{{ data.data.title }}</p>
     <footer>
-      <Price :value="data.price" />
-      <ButtonNude :to="data.link" label="Забронировать" />
+      <ButtonNude :to="'events/' + data.slug" label="подробнее" />
     </footer>
   </section>
 </template>
 
 <script setup>
 const props = defineProps(["data"]);
+const eventDate = humanDate(props.data.data.event_date.d);
 </script>
 
 <style scoped>
 section {
   white-space: initial;
-  text-align: left;
+  height: 100%;
 }
 header {
   height: 19rem;
@@ -34,14 +32,11 @@ img {
 }
 h2 {
   color: var(--color-primary);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.8rem;
   text-transform: uppercase;
   padding: 1.5rem 0;
   margin: 0;
-}
-a {
-  text-decoration: none;
 }
 p {
   font-size: 1.6rem;
@@ -50,6 +45,6 @@ p {
 }
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 </style>

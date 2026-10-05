@@ -5,6 +5,7 @@
     <div ref="container" class="container">
       <div class="card" v-for="(item, i) in data" :key="i">
         <SliderCardOccupation v-if="type == 'occupation'" :data="item" />
+        <SliderCardEvents v-if="type == 'events'" :data="item" />
         <SliderCardImage v-if="type == 'image'" :data="item" />
       </div>
     </div>
@@ -21,6 +22,7 @@ const scrollX = ref(0);
 //задаем количество карточек в слайдере
 const scrolledCards = props.cards ? props.cards : 3;
 const data = ref(props.data);
+
 const step = computed(() => {
   return scrollWidth.value / scrolledCards;
 });
@@ -48,6 +50,10 @@ const setWidth = () => {
   scrollContainer.value.style.setProperty("--items", scrolledCards);
 };
 
+// if (props.type == "events") {
+//   data.value = data.value.toReversed();
+// }
+
 const next = () => {
   validNext && scrollContainer.value.scrollTo(step.value + scrollX.value, 0);
 };
@@ -59,6 +65,7 @@ const prev = () => {
 const scrollListener = (event) => {
   scrollX.value = event.target.scrollLeft;
 };
+
 onMounted(() => {
   //инициируем ширину
   setWidth();
@@ -91,6 +98,7 @@ section.slider {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   padding: 5rem 0 10rem;
+  position: relative;
 }
 /* hide scrollbar */
 .container {
@@ -101,6 +109,7 @@ section.slider {
   display: none;
 }
 .card {
+  /* height: calc(var(--height) - 15rem); */
   scroll-snap-align: start;
   width: calc(var(--scrollWidth) / var(--items));
   /* background: lightgrey; */
@@ -108,5 +117,7 @@ section.slider {
   box-sizing: border-box;
   /* border: 1px dashed grey; */
   display: inline-block;
+  vertical-align: top;
+  /* равняем по верху  */
 }
 </style>
