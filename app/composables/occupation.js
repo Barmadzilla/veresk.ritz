@@ -1,16 +1,18 @@
 export const occupationData = () => {
-  const { veresk, dachi, terrasa, aparts } = {
-    veresk: vereskRoomsData(),
-    dachi: dachiData(),
-    terrasa: terrasaRoomsData(),
-    aparts: apartsData(),
-  };
-  const data = [
-    ...veresk.value,
-    ...aparts.value,
-    ...dachi.value,
-    ...terrasa.value,
-  ];
+	const { sibiryakov, veresk, dachi, terrasa, aparts } = {
+		veresk: vereskRoomsData(),
+		dachi: dachiData(),
+		terrasa: terrasaRoomsData(),
+		aparts: apartsData(),
+		sibiryakov: sibiryakovRoomsData(),
+	};
+	const data = [
+		...sibiryakov.value,
+		...veresk.value,
+		...aparts.value,
+		...dachi.value,
+		...terrasa.value,
+	];
 
-  return useState("occupationData", () => data);
+	return useState("occupationData", () => data);
 };

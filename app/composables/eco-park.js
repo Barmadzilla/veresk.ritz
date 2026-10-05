@@ -70,7 +70,7 @@ export const ecoParkData = () => {
             {
               title: "Детям",
               src: "/icon/kids.png",
-              link: "/restorants",
+              link: "/for-kids",
             },
             {
               title: "Вейк Парк",
