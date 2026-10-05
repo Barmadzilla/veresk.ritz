@@ -1,0 +1,167 @@
+export const vereskStandartVR = () => {
+  return useState("vereskStandartVR", () => {
+    return {
+      default: {
+        firstScene: "room",
+        author: "Veresk.club",
+        sceneFadeDuration: 1000,
+        autoRotate: 1,
+        autoRotateInactivityDelay: 10000,
+        autoLoad: true,
+        compass: false,
+        basePath: "/panoramas/standart/",
+        hotSpotDebug: false,
+      },
+      scenes: {
+        room: {
+          title: "Номер",
+          hfov: 150,
+          pitch: 0.029,
+          yaw: -165.499,
+          type: "equirectangular",
+          panorama: "enter.jpg",
+          hotSpots: [
+            {
+              pitch: -8.77,
+              yaw: -223.65,
+              type: "scene",
+              text: "Номер",
+              sceneId: "bed_l",
+            },
+            {
+              pitch: -4.918,
+              yaw: -173.18,
+              type: "scene",
+              text: "Номер",
+              sceneId: "bed_r",
+            },
+            {
+              pitch: -0.9,
+              yaw: -133.83,
+              type: "scene",
+              text: "Ванная комната",
+              sceneId: "bath",
+            },
+            {
+              pitch: -5.0,
+              yaw: -123.36,
+              type: "scene",
+              text: "Вход",
+              sceneId: "door",
+            },
+          ],
+        },
+        bed_l: {
+          title: "Номер",
+          hfov: 150,
+          pitch: 0.029,
+          yaw: -165.499,
+          type: "equirectangular",
+          panorama: "bed-l.jpg",
+          hotSpots: [
+            {
+              pitch: -2.57,
+              yaw: -221.149,
+              type: "scene",
+              text: "Номер",
+              sceneId: "bed_r",
+            },
+            {
+              pitch: 2.072,
+              yaw: -197.242,
+              type: "scene",
+              text: "Ванная комната",
+              sceneId: "bath",
+            },
+            {
+              pitch: -3.639,
+              yaw: -165.074,
+              type: "scene",
+              text: "Номер",
+              sceneId: "room",
+            },
+            {
+              pitch: 2.042,
+              yaw: -188.125,
+              type: "scene",
+              text: "Вход",
+              sceneId: "door",
+            },
+          ],
+        },
+        bed_r: {
+          title: "Номер",
+          hfov: 150,
+          pitch: 0.029,
+          yaw: -165.499,
+          type: "equirectangular",
+          panorama: "bed-r.jpg",
+          hotSpots: [
+            {
+              pitch: -4.54,
+              yaw: -142.567,
+              type: "scene",
+              text: "Номер",
+              sceneId: "bed_l",
+            },
+            {
+              pitch: -5.497,
+              yaw: -211.698,
+              type: "scene",
+              text: "Номер",
+              sceneId: "room",
+            },
+            {
+              pitch: -0.461,
+              yaw: -250.114,
+              type: "scene",
+              text: "Вход",
+              sceneId: "door",
+            },
+          ],
+        },
+        door: {
+          title: "Вход в номер",
+          hfov: 150,
+          pitch: 0.029,
+          yaw: -165.499,
+          type: "equirectangular",
+          panorama: "door.jpg",
+          hotSpots: [
+            {
+              pitch: 18.423,
+              yaw: -126.265,
+              type: "scene",
+              text: "Ванная комната",
+              sceneId: "bath",
+            },
+            {
+              pitch: 6.594,
+              yaw: -190.81,
+              type: "scene",
+              text: "Номер",
+              sceneId: "room",
+            },
+          ],
+        },
+        bath: {
+          title: "Ванная комната",
+          hfov: 150,
+          pitch: 0.029,
+          yaw: -165.499,
+          type: "equirectangular",
+          panorama: "bath.jpg",
+          hotSpots: [
+            {
+              pitch: 6.35,
+              yaw: -220.76,
+              type: "scene",
+              text: "Прихожая",
+              sceneId: "door",
+            },
+          ],
+        },
+      },
+    };
+  });
+};

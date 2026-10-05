@@ -1,0 +1,170 @@
+export const vereskSuitJuniorVR = () => {
+  return useState("vereskSuitJuniorVR", () => {
+    return {
+      default: {
+        firstScene: "room",
+        author: "Veresk.club",
+        sceneFadeDuration: 1000,
+        autoRotate: 1,
+        autoRotateInactivityDelay: 10000,
+        autoLoad: true,
+        compass: false,
+        basePath: "/panoramas/lux/",
+        hotSpotDebug: false,
+      },
+      scenes: {
+        room: {
+          title: "Номер",
+          hfov: 150,
+          pitch: 0.029,
+          yaw: -165.499,
+          type: "equirectangular",
+          panorama: "hall.jpg",
+          hotSpots: [
+            {
+              pitch: -11.612,
+              yaw: -115.053,
+              type: "scene",
+              text: "Номер",
+              sceneId: "tv",
+            },
+            {
+              pitch: -4.181,
+              yaw: -234.98,
+              type: "scene",
+              text: "Вход",
+              sceneId: "door",
+            },
+            {
+              pitch: -7.01,
+              yaw: -86.747,
+              type: "scene",
+              text: "Спальная комната",
+              sceneId: "bedroom",
+            },
+            {
+              pitch: -3.634,
+              yaw: -145.98,
+              type: "scene",
+              text: "Балкон",
+              sceneId: "balcony",
+            },
+          ],
+        },
+        tv: {
+          title: "Номер",
+          hfov: 150,
+          pitch: 0.029,
+          yaw: -165.499,
+          type: "equirectangular",
+          panorama: "tv.jpg",
+          hotSpots: [
+            {
+              pitch: -2.621,
+              yaw: -221.551,
+              type: "scene",
+              text: "Номер",
+              sceneId: "room",
+            },
+            {
+              pitch: 1.993,
+              yaw: -197.83,
+              type: "scene",
+              text: "Вход",
+              sceneId: "door",
+            },
+            {
+              pitch: -3.5528,
+              yaw: -263.01,
+              type: "scene",
+              text: "Спальная комната",
+              sceneId: "bedroom",
+            },
+            {
+              pitch: 0.995,
+              yaw: -118.93,
+              type: "scene",
+              text: "Балкон",
+              sceneId: "balcony",
+            },
+          ],
+        },
+        bedroom: {
+          title: "Номер",
+          hfov: 150,
+          pitch: -14.234,
+          yaw: -96.39,
+          type: "equirectangular",
+          panorama: "bedroom.jpg",
+          hotSpots: [
+            {
+              pitch: -7.569,
+              yaw: -316.0601,
+              type: "scene",
+              text: "Номер",
+              sceneId: "room",
+            },
+          ],
+        },
+        door: {
+          title: "Вход в номер",
+          hfov: 150,
+          pitch: 0.029,
+          yaw: -165.499,
+          type: "equirectangular",
+          panorama: "door.jpg",
+          hotSpots: [
+            {
+              pitch: 11.493,
+              yaw: -110.067,
+              type: "scene",
+              text: "Ванная комната",
+              sceneId: "bath",
+            },
+            {
+              pitch: 3.6992,
+              yaw: -158.648,
+              type: "scene",
+              text: "Номер",
+              sceneId: "room",
+            },
+          ],
+        },
+        balcony: {
+          title: "Балкон",
+          hfov: 150,
+          pitch: -30.22,
+          yaw: -66.79,
+          type: "equirectangular",
+          panorama: "balcony.jpg",
+          hotSpots: [
+            {
+              pitch: -1.7905,
+              yaw: -181.889,
+              type: "scene",
+              text: "Номер",
+              sceneId: "room",
+            },
+          ],
+        },
+        bath: {
+          title: "Ванная комната",
+          hfov: 150,
+          pitch: 0.029,
+          yaw: -165.499,
+          type: "equirectangular",
+          panorama: "bath.jpg",
+          hotSpots: [
+            {
+              pitch: -6.019,
+              yaw: -283.19,
+              type: "scene",
+              text: "Прихожая",
+              sceneId: "door",
+            },
+          ],
+        },
+      },
+    };
+  });
+};
