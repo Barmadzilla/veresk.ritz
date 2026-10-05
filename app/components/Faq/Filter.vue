@@ -20,6 +20,6 @@ const props = defineProps(["data", "filter", "before"]);
   margin-right: 1.2rem;
 }
 .tags {
-  padding-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 </style>

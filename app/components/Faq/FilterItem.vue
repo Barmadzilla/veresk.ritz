@@ -16,6 +16,7 @@ const name = {
   dachi: "Коттедж",
   aparts: "Апартаменты",
   terrasa: "Глэмпинг",
+  sibiryakov: "Люкс",
 };
 const tag = name[props.type];
 </script>
