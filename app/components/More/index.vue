@@ -15,7 +15,7 @@ const defaults = [
     type: "Банкетные залы",
     description:
       "Роскошная свадьба среди соснового леса и озерной глади — великолепные декорации, созданные самой природой. ",
-    link: "/",
+    link: "/wedding",
     src: "/images/more/wedding.jpg",
   },
   {
@@ -23,7 +23,7 @@ const defaults = [
     type: "Спортиный клуб",
     description:
       "Погрузитесь в мир спорта и природы, развивайтесь физически и находите новых друзей.",
-    link: "/",
+    link: "https://sport.veresk.club",
     src: "/images/more/sport.jpg",
   },
   {
@@ -31,7 +31,7 @@ const defaults = [
     type: "Детская анимация",
     description:
       "Погрузитесь в мир спорта и природы, развивайтесь физически и находите новых друзей.",
-    link: "/",
+    link: "/for-kids",
     src: "/images/more/camp.jpg",
   },
   {
@@ -39,7 +39,7 @@ const defaults = [
     type: "СПА и бассейн",
     description:
       "Ощутите на себе все прелести люксового СПА и Инфинити бассейна с видом на озеро!",
-    link: "/",
+    link: "/spa-resort",
     src: "/images/more/pool.jpg",
   },
 ];
