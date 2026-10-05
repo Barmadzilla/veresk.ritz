@@ -12,7 +12,7 @@
 <script setup>
 const { src, title, description, link } = {
   src: "/images/infinity_pool_small.jpg",
-  title: "Июнь  на СПА-курорте",
+  title: "Июнь на СПА-курорте",
   description: "Эксклюзивное предложение для проживающих",
   link: "#",
 };

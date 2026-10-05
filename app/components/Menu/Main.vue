@@ -1,8 +1,13 @@
 <template>
   <div class="menu-bar">
-    <MenuButton label="Mеню" icon="burger" @click="open = true" />
     <MenuTitle />
-    <MenuButton label="Найти номер" icon="search" />
+    <MenuButton label="Mеню" icon="burger" @click="open = true" />
+    <MenuButton
+      label="Найти номер"
+      icon="search"
+      data-tl-booking-open="true"
+      data-tl-booking-scenario="53273"
+    />
   </div>
   <Teleport to="#teleports">
     <Transition name="modal" :duration="300">
@@ -87,7 +92,7 @@ const contacts = [
   justify-content: space-between;
   align-items: start;
   padding: 3rem 4rem;
-  z-index: 20;
+  z-index: 40;
   position: absolute;
   width: 100%;
   box-sizing: border-box;

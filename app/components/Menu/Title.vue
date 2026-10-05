@@ -10,7 +10,12 @@
 
 <style scoped>
 .container {
+  position: absolute;
+  width: 100%;
   text-align: center;
+  top: 1.5rem;
+  left: 0;
+  pointer-events: none;
 }
 .logo {
   height: 7.5rem;

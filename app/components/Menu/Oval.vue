@@ -18,7 +18,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 20;
+  z-index: 40;
   display: flex;
   justify-content: center;
 }
