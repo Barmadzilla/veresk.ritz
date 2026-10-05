@@ -25,7 +25,7 @@
         </ul>
       </section>
       <section>
-        <h2>Докуметны</h2>
+        <h2>Документы</h2>
         <ul>
           <li v-for="(item, i) in docs">
             <NuxtLink :to="item.link">{{ item.title }}</NuxtLink>
