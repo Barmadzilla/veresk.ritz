@@ -35,4 +35,9 @@ const faq = ref(
 
 const poster = setPoster();
 poster.value = data.value.poster;
+setSeo({
+  title: data.value.title,
+  excerpt:
+    "Ответы на самые распространенные вопросы про СПА-Курорт Вереск. Проживание, посещение бассейна, рестораны и СПА процедуры",
+});
 </script>

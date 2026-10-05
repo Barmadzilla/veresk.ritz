@@ -19,7 +19,9 @@
                   ? Space
                   : item.type == 'offers'
                     ? Offers
-                    : null
+                    : item.type == 'mapField'
+                      ? MapField
+                      : null
       "
       v-bind="
         item.type == 'slideShow'
@@ -42,6 +44,7 @@ const SlideShow = resolveComponent("SliderContainer");
 const Buttons = resolveComponent("ContentButtons");
 const Space = resolveComponent("ContentSpace");
 const Offers = resolveComponent("OffersContainer");
+const MapField = resolveComponent("MapField");
 
 const route = useRoute();
 
@@ -50,6 +53,7 @@ const content = {
   "business-events": businessEventData(),
   "eco-park": ecoParkData(),
   "for-kids": forKidsData(),
+  contacts: contactsData(),
 };
 
 const data = ref(content[route.params.page]);
@@ -62,4 +66,8 @@ if (data.value == undefined || data.value.length == 0) {
 
 const poster = setPoster();
 poster.value = data.value.poster;
+setSeo({
+  title: data.value.title,
+  excerpt: data.value.content[0].text,
+});
 </script>

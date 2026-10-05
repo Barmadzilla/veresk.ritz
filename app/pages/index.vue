@@ -9,6 +9,9 @@
       <ButtonNude label="Подробнее" to="/hotel" />
     </ContentTextBlock>
     <OffersContainer />
+    <ContentSpace />
+    <TitleSecondary title="Афиша Вереска" />
+    <SliderContainer :data="eventsData" type="events" />
   </div>
 </template>
 
@@ -21,6 +24,7 @@ const p = setPoster();
 p.value = "/images/posters/hotel.jpg";
 
 const sliderData = sliderCards();
+const eventsData = vereskEventsData();
 const introText =
   "Откройте для себя загородный спа-курорт «Вереск»: Отдых начинается здесь! Погрузитесь в мир гармонии и спокойствия в загородном отеле, укрытом среди вековых сосен на берегу живописного озера. Этот оазис комфорта и уюта стал идеальным местом для полноценного отдыха и единения с природой всей семьёй всего в 30 минутах езды от Санкт-Петербурга.";
 
