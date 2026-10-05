@@ -49,6 +49,7 @@ const workingHours = fromTo(list.working.from, list.working.to);
 const content = {
   veresk: vereskData(),
   primavera: primaveraData(),
+  deer: deerData(),
 };
 
 const data = ref(content[route.params.resto[0]]);
@@ -58,6 +59,10 @@ poster.value = "/images/posters/restorants.jpg";
 
 definePageMeta({
   parent: [{ title: "Рестораны", slug: "/restorants" }],
+});
+setSeo({
+  title: data.value.title,
+  excerpt: list.description,
 });
 </script>
 

@@ -23,6 +23,10 @@ definePageMeta({
   title: "Рестораны",
 });
 const listData = restorantsData();
+setSeo({
+  title,
+  excerpt: text,
+});
 </script>
 
 <style scoped></style>
