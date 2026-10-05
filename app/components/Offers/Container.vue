@@ -12,8 +12,8 @@ const defaultData = [
   { title: "Корпаратив", src: "/icon/corp.png", link: "/corporate-events" },
   { title: "День Рождения", src: "/icon/hb.png", link: "/" },
   { title: "Банкет", src: "/icon/banquet.png", link: "/" },
-  { title: "Детям", src: "/icon/kids.png", link: "/" },
-  { title: "Спорт", src: "/icon/sport.png", link: "/" },
+  { title: "Детям", src: "/icon/kids.png", link: "/for-kids" },
+  { title: "Спорт", src: "/icon/sport.png", link: "https://sport.veresk.club" },
   { title: "СПА", src: "/icon/spa.png", link: "/spa-resort" },
 ];
 const data = ref(props.data != undefined ? props.data : defaultData);
